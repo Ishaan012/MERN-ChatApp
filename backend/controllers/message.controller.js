@@ -55,7 +55,7 @@ export const getMessages = async (req, res) => {
 
         const messages= conversation.messages;
 
-        res.status(200).json(conversation.messages);
+        res.status(200).json(messages);
 
     } catch (error) {
         console.log("Error in sendMessage controller: ", error.message);
